@@ -6,6 +6,10 @@ public class Main {
        stacks.push(10);
        stacks.push(28);
        stacks.push(34);
+       stacks.push(32);
+       stacks.printStacks();
+       System.out.println("New stack is:");
+       stacks.insertMiddle(45);
        stacks.printStacks();
     }
 }

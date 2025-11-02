@@ -1,7 +1,7 @@
 public class LinkedListStacks<T> {
         private Node top;
         private int size;
-        public void LinkedListStacks(){
+        public  LinkedListStacks(){
             this.top = null;
             this.size = 0;
         }
@@ -47,6 +47,5 @@ public class LinkedListStacks<T> {
                System.out.print(current.data + ">--");
                current = current.next;
            }
-           System.out.println("The stack is empty");
        }
    }
