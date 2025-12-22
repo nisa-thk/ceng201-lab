@@ -4,7 +4,7 @@ public class HospitalSystem {
 	PatientList list = new PatientList(); //For admitted patient
     TreatmentQueue queue = new TreatmentQueue(); //For waiting normal and priority patients
     DischargeStack stack = new DischargeStack(); //For processed discharges
-    HashMap<Integer,Patient > patientHashMap = new HashMap<>(); //Fat accsess by Hashmap
+    HashMap<Integer,Patient > patientHashMap = new HashMap<>(); //Quick accsess by Hashmap
 
     public void addPatient(Patient p){
         list.addPatient(p); //Add to the linked list
@@ -75,3 +75,4 @@ public class HospitalSystem {
 	
 
 }
+
