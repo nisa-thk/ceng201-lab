@@ -3,7 +3,8 @@ package Ceng201HW_Assigments;
 public class Main {
 
 	public static void main(String[] args) {
-	      //TASK1
+	      System.out.println("TASK 1"); 
+		 //TASK1
 	      PatientList list = new PatientList();
 	      // Add 5 patient to list
 	      list.addPatient(new Patient(1234556677,"Şakir",10,4));
@@ -26,9 +27,11 @@ public class Main {
 	      System.out.println("--------------------------------");
 
 
-	      //TASK2
+	    System.out.println("TASK 2");  
+		//TASK2
 	      DischargeStack stack = new DischargeStack();
 	      //Add 5 discharge records
+		  System.out.println("Add 5 discharge records");
 	      stack.push(new DischargeRecord(362584205, System.currentTimeMillis()));
 	      stack.push(new DischargeRecord(362584298, System.currentTimeMillis()));
 	      stack.push(new DischargeRecord(362584216, System.currentTimeMillis()));
@@ -37,6 +40,7 @@ public class Main {
 	      stack.printStack();
 	      System.out.println("----------------------");
 	      //Pop 2 of them
+		  System.out.println("Pop 2 of them");
 	      DischargeRecord p1 = stack.pop();
 	      System.out.println("Popped: " + p1);
 	      DischargeRecord p2 = stack.pop();
@@ -46,6 +50,7 @@ public class Main {
 	      stack.printStack();
 
 	      //TASK3
+		  System.out.println("Task 3");
 	      TreatmentQueue queue = new TreatmentQueue();
 	      queue.enqueue(new TreatmentRequest(1235802320, 1500, true)); //priority
 	      queue.enqueue(new TreatmentRequest(1235802321, 1790, true)); //priority
@@ -67,6 +72,7 @@ public class Main {
 	      queue.printQueue();
 
 	      //TASK4
+		  System.out.println("Task 4");
 	      HospitalSystem system = new HospitalSystem();
 	      system.addPatient(new Patient(1234, "Asım ", 3, 25));
 	      system.addPatient(new Patient(6789, "Aslıhan", 9, 75));
@@ -90,6 +96,7 @@ public class Main {
 	      system.addTreatmentRequest(8, 2200, true);
 
 	      //add 2 discharge methods
+		  System.out.println("Add 2 discharge methods");
 	      system.addDischargeRecord(123464, System.currentTimeMillis());
 	      system.addDischargeRecord(379754, System.currentTimeMillis());
 
@@ -107,3 +114,4 @@ public class Main {
 		
 	}
 }
+
