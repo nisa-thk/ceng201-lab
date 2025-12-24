@@ -15,12 +15,14 @@ public class PatientList {
 	        Node newNode = new Node(p);
 	        if (head == null) {
 	            head = newNode;
+				return;
 	        }
 	        Node current = head;
 	        while (current.next != null) {
 	            current = current.next;
+			}
 	            current.next = newNode;
-	        }
+	        
 	    }
 
 	    public void removePatient(int id) {
@@ -60,3 +62,4 @@ public class PatientList {
 	        }
 	    }
 }
+
